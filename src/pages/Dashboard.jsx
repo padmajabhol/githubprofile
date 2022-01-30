@@ -19,6 +19,7 @@ const Dashboard = () => (
     </div>
     <div className='box' />
     <p>Dashboard</p>
+    <Repos />
   </Wrapper>
 );
 
