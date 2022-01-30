@@ -1,8 +1,17 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import styled from 'styled-components';
+import octa from '../assets/pngwing.com.png';
 
-const Login = () => <h2>login page</h2>;
+const Login = () => (
+  <Wrapper>
+    <div className='container'>
+      <img src={octa} alt='github octacat' />
+      <h1>OctaStats</h1>
+      <Btn>Login</Btn>
+    </div>
+  </Wrapper>
+);
 const Wrapper = styled.section`
   min-height: 100vh;
   display: grid;
@@ -14,9 +23,20 @@ const Wrapper = styled.section`
   }
   img {
     margin-bottom: 2rem;
+    width: 60%;
   }
   h1 {
-    margin-bottom: 1.5rem;
+    color: #b3b2c5;
+    font-family: roboto;
+    font-size: 4rem;
   }
+`;
+const Btn = styled.button`
+  background-color: #6b62b9;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  padding: 8px 18px;
 `;
 export default Login;

@@ -17,12 +17,12 @@ const Error = () => (
   </Wrapper>
 );
 const Wrapper = styled.section`
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  background: #000000;
+  position: relative;
+  margin: auto 0 auto 0;
   text-align: center;
+  font-family: Roboto;
   h1 {
+    font-weight: 100;
     font-size: 15rem;
     line-height: 0px;
     color: #ebd64f;
@@ -30,6 +30,16 @@ const Wrapper = styled.section`
   h3 {
     color: #b3b2c5;
     margin-bottom: 1.5rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 8rem;
+    }
+    h3 {
+      padding-right: 10%;
+      padding-left: 10%;
+    }
   }
 `;
 
